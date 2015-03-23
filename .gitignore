@@ -1,4 +1,4 @@
-ImageRecognitionApp/.idea/gradle.xml
-ImageRecognitionApp/.idea/misc.xml
+ImageRecognitionApp/.idea/*
 ImageRecognitionApp/app/app.iml
 ImageRecognitionApp/app/build.gradle
+
