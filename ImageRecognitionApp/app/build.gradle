@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 21
+    buildToolsVersion '21.1.1'
 
     defaultConfig {
         applicationId "no.uia.guchoo.imagerecognition"
@@ -24,4 +24,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile project(':BT200Ctrl')
     compile files('D:/Development/UiASkole/IKT-411/DeepLearningforSmartGlasses/ImageRecognitionApp/BT200Ctrl/BT200Ctrl.jar')
+    compile project(':metaioSDK')
 }
