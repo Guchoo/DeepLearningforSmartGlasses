@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 dependencies {
     //this excludes libs/android-support-v4.jar that is added through gradle dependencies but kept for Eclipse users
-    compile fileTree(includes: ['metaiosdk.jar', '*.so'], dir: 'libs')
+    compile fileTree(dir: 'libs', includes: ['metaiosdk.jar', '*.so'])
     compile 'com.android.support:support-v4:21.0.2'
 }
 

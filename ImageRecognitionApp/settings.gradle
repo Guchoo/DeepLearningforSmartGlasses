@@ -1,1 +1,1 @@
-include ':app', ':BT200Ctrl', ':metaioSDK'
+include ':app', ':metaioSDK'

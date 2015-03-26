@@ -300,7 +300,7 @@
     <string name="MSG_TITLE_WARNING">Warning</string>
     <!-- From: file:/D:/Development/UiASkole/IKT-411/DeepLearningforSmartGlasses/ImageRecognitionApp/metaioSDK/res/values/ids.xml -->
     <eat-comment/>
-    <item name="metaioSDKSignature" type="string">k59CpQMNGE6Ko1yNxElbIMnUbGbqj0CG22clvqDv8IU=</item>
+    <item name="metaioSDKSignature" type="string">k59CpQMNGE6Ko1yNxElbIMnUbGbqj0CG22clvqDv8IU= </item>
     <!-- From: file:/D:/Development/UiASkole/IKT-411/DeepLearningforSmartGlasses/ImageRecognitionApp/metaioSDK/res/values/theme.xml -->
     <eat-comment/>
     <style name="POIButton" parent="android:style/Widget.Button">
