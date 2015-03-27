@@ -32,6 +32,10 @@ public class FullscreenActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fullscreen);
 
+        if( getIntent().getBooleanExtra("Exit me", false)){
+            finish();
+        }
+
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
         final View contentView = findViewById(R.id.fullscreen_content);
 
@@ -113,8 +117,12 @@ public class FullscreenActivity extends Activity {
         }
     }
 
-    public void exitOnClick(){
-        System.exit(0);
+    public void exitOnClick(View v){
+        Intent intent = new Intent(this, FullscreenActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("Exit me", true);
+        startActivity(intent);
+        finish();
     }
 
     @Override

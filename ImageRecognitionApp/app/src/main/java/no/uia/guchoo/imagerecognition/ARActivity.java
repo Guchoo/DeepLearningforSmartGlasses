@@ -1,7 +1,6 @@
 package no.uia.guchoo.imagerecognition;
 
-
-
+import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -44,6 +43,10 @@ public class ARActivity extends ARViewActivity {
         else{
             message.setVisibility(View.INVISIBLE);
         }
+    }
+
+    public void exitCamOnClick(View v){
+        System.exit(0);
     }
 }
 
