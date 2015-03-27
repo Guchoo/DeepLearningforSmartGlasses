@@ -44,9 +44,5 @@ public class ARActivity extends ARViewActivity {
             message.setVisibility(View.INVISIBLE);
         }
     }
-
-    public void exitCamOnClick(View v){
-        System.exit(0);
-    }
 }
 
