@@ -1,9 +1,8 @@
 package no.uia.guchoo.imagerecognition;
 
 
-import android.content.ContentProvider;
+
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.metaio.sdk.ARViewActivity;

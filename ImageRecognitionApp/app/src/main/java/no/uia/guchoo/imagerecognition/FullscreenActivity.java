@@ -113,6 +113,10 @@ public class FullscreenActivity extends Activity {
         }
     }
 
+    public void exitOnClick(){
+        System.exit(0);
+    }
+
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
