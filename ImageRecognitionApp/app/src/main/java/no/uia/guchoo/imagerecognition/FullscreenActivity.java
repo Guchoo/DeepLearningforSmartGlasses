@@ -32,16 +32,13 @@ public class FullscreenActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fullscreen);
 
-        if( getIntent().getBooleanExtra("Exit me", false)){
-            finish();
-        }
-
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
         final View contentView = findViewById(R.id.fullscreen_content);
 
         task = new AssetsExtracter();
         Intent intent = new Intent(getApplicationContext(), ARActivity.class);
         startActivity(intent);
+        finish();
 
         // Set up an instance of SystemUiHider to control the system UI for
         // this activity.
@@ -103,6 +100,13 @@ public class FullscreenActivity extends Activity {
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(resultCode==2){
+            finish();
+        }
+    }
+
     private class AssetsExtracter extends AsyncTask<Integer,Integer,Boolean>{
         @Override
         protected Boolean doInBackground(Integer...params){
@@ -118,11 +122,8 @@ public class FullscreenActivity extends Activity {
     }
 
     public void exitOnClick(View v){
-        Intent intent = new Intent(this, FullscreenActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.putExtra("Exit me", true);
-        startActivity(intent);
         finish();
+        System.exit(0);
     }
 
     @Override

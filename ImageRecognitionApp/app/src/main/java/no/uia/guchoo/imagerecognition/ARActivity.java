@@ -15,8 +15,7 @@ import com.metaio.sdk.jni.IMetaioSDKCallback;
 public class ARActivity extends ARViewActivity {
 
     @Override
-    protected int getGUILayout() {
-        return R.layout.ar_view;
+    protected int getGUILayout() {return R.layout.ar_view;
     }
 
     @Override
@@ -43,6 +42,16 @@ public class ARActivity extends ARViewActivity {
         else{
             message.setVisibility(View.INVISIBLE);
         }
+    }
+
+    protected void onStop() {
+        setResult(2);
+        super.onStop();
+    }
+    @Override
+    protected void onDestroy() {
+        setResult(2);
+        super.onDestroy();
     }
 }
 
