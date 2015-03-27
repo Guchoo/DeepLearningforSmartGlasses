@@ -9,4 +9,4 @@
     <item android:drawable="@drawable/button_green_default" android:state_focused="true"/>
     <item android:drawable="@drawable/button_green_default"/>
 
-</selector><!-- From: file:/D:/Development/UiASkole/IKT-411/DeepLearningforSmartGlasses/ImageRecognitionApp/metaioSDK/res/drawable/button_detail_green.xml -->
+</selector><!-- From: file:/D:/Development/MoverioWorkspace/DeepLearningforSmartGlasses/ImageRecognitionApp/metaioSDK/res/drawable/button_detail_green.xml -->

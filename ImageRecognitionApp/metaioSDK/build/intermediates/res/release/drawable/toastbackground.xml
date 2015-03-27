@@ -11,4 +11,4 @@
 		android:right="20dip" 
 		android:bottom="2dip" />
 	<corners android:radius="5dip" />
-</shape><!-- From: file:/D:/Development/UiASkole/IKT-411/DeepLearningforSmartGlasses/ImageRecognitionApp/metaioSDK/res/drawable/toastbackground.xml -->
+</shape><!-- From: file:/D:/Development/MoverioWorkspace/DeepLearningforSmartGlasses/ImageRecognitionApp/metaioSDK/res/drawable/toastbackground.xml -->
