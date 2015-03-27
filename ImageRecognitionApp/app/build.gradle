@@ -23,5 +23,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile project(':BT200Ctrl')
-    compile files('D:/Development/UiASkole/IKT-411/DeepLearningforSmartGlasses/ImageRecognitionApp/BT200Ctrl/BT200Ctrl.jar')
+    compile files('D:/Development/DeepLearningforSmartGlasses/ImageRecognitionApp/BT200Ctrl/BT200Ctrl.jar')
 }
