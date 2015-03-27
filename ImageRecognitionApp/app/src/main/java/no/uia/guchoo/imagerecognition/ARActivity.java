@@ -2,8 +2,10 @@ package no.uia.guchoo.imagerecognition;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.metaio.sdk.ARELActivity;
 import com.metaio.sdk.ARViewActivity;
 import com.metaio.sdk.jni.IGeometry;
 import com.metaio.sdk.jni.IMetaioSDKCallback;
@@ -34,14 +36,7 @@ public class ARActivity extends ARViewActivity {
     }
 
     public void onButtonClick(View v){
-        TextView message = (TextView) findViewById(R.id.messageLabel);
-        message.setText("Heisann!");
-        if(message.getVisibility() == View.INVISIBLE){
-            message.setVisibility(View.VISIBLE);
-        }
-        else{
-            message.setVisibility(View.INVISIBLE);
-        }
+
     }
 
     protected void onStop() {

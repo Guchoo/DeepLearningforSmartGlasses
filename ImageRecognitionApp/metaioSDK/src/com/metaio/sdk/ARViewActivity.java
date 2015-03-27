@@ -123,6 +123,8 @@ public abstract class ARViewActivity extends FragmentActivity implements MetaioS
 	{
 		metaioSDK.startCamera(Camera.FACE_BACK);
 	}
+    protected ARELInterpreterAndroidJava mARELInterpreter;
+    protected ARELActivity.ARELInterpreterCallback mARELCallback;
 
 	@SuppressLint("InlinedApi")
 	@Override
@@ -131,6 +133,11 @@ public abstract class ARViewActivity extends FragmentActivity implements MetaioS
 		super.onCreate(savedInstanceState);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		MetaioDebug.log("ARViewActivity.onCreate");
+
+        //Create the AREL interpreter and its callback
+        //mARELInterpreter = new ARELInterpreterAndroidJava();
+        //mARELInterpreter.registerCallback(mARELCallback);
+
 
 		mDisplayListener = null;
 		metaioSDK = null;
