@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "no.uia.guchoo.imagerecognition"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.0.0'
+<<<<<<< HEAD
+    compile project(':BT200Ctrl')
+    compile files('D:/Development/DeepLearningforSmartGlasses/ImageRecognitionApp/BT200Ctrl/BT200Ctrl.jar')
+=======
+    compile 'com.android.support:support-v4:22.0.0'
+    compile project(':metaioSDK')
+    compile files('libs/BT200Ctrl.jar')
+>>>>>>> 4f8f79dbd964f0e1036e388e46a5b22ca1a6338a
+}
